@@ -10,5 +10,3 @@ Route::get('/', function () {
 Route::get('/register', [AuthController::class, 'ShowRegister'])->name('register.show');
 
 Route::post('/register', [AuthController::class,'Register'])->name('register');
-
-Route::get('/example', [AuthController::class, 'example'])->name('example');
