@@ -9,17 +9,17 @@
 </head>
 
 <body>
-    <nav>
+    <header class="container-fluid">
         <div>
             @if (Auth::check())
-                <a href="">Профиль</a>
-                <a href="">Выйти</a>
+                <a href="" class="btn btn-primary">Профиль</a>
+                <a href="" class="btn btn-primary">Выйти</a>
             @else
-                <a href="/register">Регистрация</a>
-                <a href="/login">Войти</a>
+                <a href="/register" class="btn btn-primary">Регистрация</a>
+                <a href="/login" class="btn btn-primary">Войти</a>
             @endif
         </div>
-    </nav>
+    </header>
     {{ $slot }}
 
 </body>
